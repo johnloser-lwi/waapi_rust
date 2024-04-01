@@ -1,0 +1,23 @@
+[package]
+name = "waapi_rust"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+wamp_async = "0.3.1"
+async-trait = "0.1"
+futures = "0.3"
+log = "0.4"
+native-tls = "0.2"
+quick-error = "2"
+rand = "0.8"
+rmp-serde = "0.15"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+strum = { version = "0.20", features = ["derive"] }
+tokio = { version = "1", features = ["full"] }
+tokio-native-tls = "0.3"
+tokio-tungstenite = { version = "0.14", features = ["native-tls"] }
+url = "2"
